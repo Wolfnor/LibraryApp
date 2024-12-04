@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Библиотека</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Онлайн Библиотека</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a id="catalog">Мой Каталог</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+          <li><a id="login">Войти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <div class="banner-content">
+        <h2>Добро пожаловать в нашу библиотеку!</h2>
+        <p>Здесь вы найдете книги на любой вкус.</p>
+      </div>
+    </section>
+
+    <section class="book-list" id="catalog">
+      <h2>Наши книги</h2>
+      <input type="text" id="searchInput" placeholder="Поиск книг..." />
+      <div class="book-container" id="bookContainer"></div>
+      <div id="pagination"></div>
+    </section>
+
+    <section class="banner" id="about">
+      <h2>О нас</h2>
+
+        <p>Добро пожаловать на сайт нашей библиотеки! Мы — это пространство знаний, вдохновения и творчества, открытое для всех, кто стремится к самосовершенствованию, обучению и культурному развитию.
+        Наша миссия
+        Мы создаем условия для свободного доступа к информации, способствуем развитию чтения, поддерживаем образование и культурные инициативы, а также предоставляем площадку для общения и обмена идеями.
+        </p>
+
+        <h3>Что мы предлагаем</h3>
+        <p>• Книги на любой вкус: от классики до современных бестселлеров, научной литературы и произведений местных авторов.</p>
+        <p>• Электронные ресурсы: доступ к онлайн-библиотекам, базам данных и другим цифровым инструментам.</p>
+
+
+        <h3>Почему выбирают нас</h3>
+        <p>Мы стремимся быть не просто библиотекой, а современным культурным центром, где каждый найдет что-то для себя. Здесь ценится уважение, поддержка и стремление к развитию.
+        Присоединяйтесь к нашей дружной библиотечной семье и откройте для себя мир знаний и вдохновения!
+        Мы всегда рады видеть вас!
+         </p>
+    </section>
+
+    <footer id="contact">
+      <div class="footer-content">
+        <h3>Контакты</h3>
+        <p>Телефон: 8-776-114-98-62</p>
+        <p>Email: MA141005@mail.ru</p>
+        <h3>Социальные сети</h3>
+        <p>Instagram | Facebook | VK</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+      document.getElementById('catalog').addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'catalog.html';
+      });
+    </script>
+    <script>
+      document.getElementById('login').addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'index.html';
+      });
+    </script>
+  </body>
+</html>
