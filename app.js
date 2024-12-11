@@ -41,6 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'https://knigli.ru/wp-content/uploads/2021/05/oblozhka-knigi-v-etot-den-ya-poznakomilsya-s-soboj-333x500.jpg',
     },
     {
+      title: 'Портрет Дориана Грея',
+      author: 'Оскар Уайльд',
+      image:
+        'https://i1.mybook.io/p/512x852/book_covers/1f/f6/1ff6b336-43c6-4c00-a944-cecf9805f413.jpe?v2',
+    },
+    {
       title: 'Сцена после титров',
       author: 'Алексей Корнелюк',
       image:
@@ -82,6 +88,18 @@ document.addEventListener('DOMContentLoaded', () => {
       image:
         'https://knigli.ru/wp-content/uploads/2021/11/oblozhka-knigi-na-nebesah-tebe-net-mesta-333x500.jpg',
     },
+    {
+      title: 'Эффект Люцифера',
+      author: 'Филип Зимбардо',
+      image:
+        'https://avatars.dzeninfra.ru/get-zen_doc/9707955/pub_643c1d2d4b3e193f739f37b5_643c3843b9ff2b009f4d90bd/scale_1200',
+    },
+    {
+      title: 'Страх близости',
+      author: 'Илсе Санд',
+      image:
+        'https://avatars.dzeninfra.ru/get-zen_doc/9707108/pub_643c1d2d4b3e193f739f37b5_643c3970b727dd713a7b1464/scale_1200',
+    },
   ];
 
   const userCatalog = JSON.parse(localStorage.getItem('userCatalog')) || [];
@@ -96,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  const booksPerPage = 4;
+  const booksPerPage = 6;
   let currentPage = 1;
   let filteredBooks = [...books];
 
